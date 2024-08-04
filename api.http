@@ -54,6 +54,7 @@ Content-Type: application/json
 
 ###
 @spotID = {{createSpot.response.body.id}}
+@spotName = {{createSpot.response.body.name}}
 
 
 ###
@@ -68,3 +69,13 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/events/{{eventID}}/spots/{{spotID}}
 
+
+### reserver spots (lugares)
+POST http://localhost:3000/events/{{eventID}}/reserve
+Content-Type: application/json
+
+{
+  "spots" : ["{{spotName}}"],
+  "ticked_kind": "full",
+  "email": "test@test.com"
+}
