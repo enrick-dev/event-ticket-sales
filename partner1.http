@@ -74,6 +74,7 @@ DELETE http://localhost:3000/events/{{eventID}}/spots/{{spotID}}
 ### reserver spots (lugares)
 POST http://localhost:3000/events/{{eventID}}/reserve
 Content-Type: application/json
+x-api-token: 1233451bc
 
 {
   "spots" : ["{{spotName}}"],
