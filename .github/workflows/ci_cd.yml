@@ -18,7 +18,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   # REGISTRY: ghcr.io
-  REGISTRY: ghcr.io
+  REGISTRY: docker.io
   IMAGE_NAME: nest-433802/nest
   # github.repository as <account>/<repo>
   # IMAGE_NAME: ${{ github.repository }}
