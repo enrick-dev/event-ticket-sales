@@ -59,7 +59,20 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: _json_key
-          password: ${{ secrets.GCP_KEY }}
+          password:
+            {
+              'type': 'service_account',
+              'project_id': 'nest-433802',
+              'private_key_id': 'ee695df00ca490785be88bfcf5860835c1e62404',
+              'private_key': "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCytNT9fqnDHWPz\n/x8COMcmlbHJdffxgrzxDfL2ON4vGwbdggYfDNspNTAD5tIIEK//d9kGHASZQU8t\nzn2Y3XWLgOHTZd9CyBIJnXMjkC9xpctxmj3Z+VWmwrOM1x6h5gmI1XVQC0hdKHbw\nkeioi2fAU8CrJJWxj2Pfxjj1hgzDmY/lfma08e0HngpAi0DvqvzXYlz3mU7h2EJn\n+t8FYxpiw1I6TpvVeuX+Swa05eC3r5cvn0CTQJBoBWmCflFBkbbD8pfvYecDkK4k\n50iKHE7tmlrE5eO3d0Ifpt4Pt5N64b1EWlEUpF87hd14Yy8CnDrGVjpXxcN0PAeg\nAI3pk8NfAgMBAAECggEACCQPvdqKzj4lAwUAux+uBtZz6msK2AAuLkcF5eySRpAT\nIH0fXUO/KiHnpY3azI5CDj+97bbSCM8+VaZd91xDUg8VeoVeBdNKaxC2oYycdK9q\nVKsDnU3r9nRRLJ3SIeryTT74IKTa749715q2ABOVrt/B26oHfba8BIIprxmjtDdT\naImLiCIMXYk4XSD7PeIt9Vd8C0czYcZXiTRgeD5JzELSpRlneHNGcXNxMrztK4ZU\nDuSfm3S6I7Dnn2Djj6Af5AM63YSNe/c0ad0AZZ2tP+sj6ARGH6MDJ6k0O2mIh+x5\ncPFKX/fqJ50dClt8EyNO8N9L30AT+I6oFoA1Kal2rQKBgQD6rYWZ39eWEJRWEUdp\nAwCcya5RgOEeHCenRyaPQX3cpq/oDvjSuEFbxxwxPzYEJVbmdZxXZB0WHxgFQIov\nC2i3tZNufQrwnybcblpWoIVaohe/04k2OU9WQnPAHP6HjiBlZXqtC5JuQJTm2/D3\nHSwgSSbL5pctdd2SeWLjurS0EwKBgQC2gCH0AP+3FL3/RQ7nwat16toKdIMOWLpl\nvwqeK9ewgPw6Xx9fZk2+Hc+6DD/XC40TO1iom/d7G0NItVOIgecDExPXyyN4g08p\neFkLlXb7XGl0CvE5RPNVO7Sw6OzB4qL1DawJSAbphIsf5rObWmhsGvvVSuZeCBcl\nWVpsq5SlBQKBgDuJLLrf8+bbJy/NyMUDBok2SSVoU48AJtbOyjSp3EekexDFRYle\nY391qZd0qNKRP7NaaXhD+biASAcvTeJgdk1zXYGXRxrg4azmtKPwWduttbBEgEkV\nkWcuPyl4eWcedUk/scQZhHyU8AhoYjF+hzVfykwRBwSwAqDAHaFyfWprAoGAZAgj\nlC0f/Of/pHXjz6BWLRIHZYerdieoM7DdTwlU9kgc+Jm/Bnl6z2RjweSI8YRBVXNI\nC1NB+VZeMPJC0SXyy7qfO776uEmxEFgI5tKMHwbuPk7pHazve554Uie57iQdkhhm\nXcf/Eew2ncvEUrjhV7AKrUSatJvWpAAwEjSSC0kCgYEA8oKox0P2in0lf4fFG9H/\nkbOHcTcCXUPb+C7R6Fv+0Xytb5p4IHc/n5vj9iiW3I6CxAuVAMlHbS9c0tsfEoPg\naynJqdtaiuLlX1pxnicP9hAqEIe5HJ53Mo2x+ADwWMt1Xfy2uxWqn0SVt1ywGA96\nSWLx7OXc/oe51WxfUNtQUJU=\n-----END PRIVATE KEY-----\n",
+              'client_email': 'default-account@nest-433802.iam.gserviceaccount.com',
+              'client_id': '115796145472834771930',
+              'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
+              'token_uri': 'https://oauth2.googleapis.com/token',
+              'auth_provider_x509_cert_url': 'https://www.googleapis.com/oauth2/v1/certs',
+              'client_x509_cert_url': 'https://www.googleapis.com/robot/v1/metadata/x509/default-account%40nest-433802.iam.gserviceaccount.com',
+              'universe_domain': 'googleapis.com',
+            }
           # username: ${{ github.actor }}
           # password: ${{ secrets.GITHUB_TOKEN }}
 
