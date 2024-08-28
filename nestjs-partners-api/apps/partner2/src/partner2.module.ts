@@ -9,7 +9,10 @@ import { join } from 'path';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env.partner2',
+      envFilePath: [
+        join(__dirname, '..', `.env.partner2${process.env.NODE_ENV}`),
+        join(__dirname, '..', '.env.partner2'),
+      ],
       isGlobal: true,
     }),
     PrismaModule,
