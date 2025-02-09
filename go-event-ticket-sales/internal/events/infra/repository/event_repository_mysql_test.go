@@ -16,7 +16,7 @@ var db *sql.DB
 
 func TestMain(m *testing.M) {
 	var err error
-	db, err = sql.Open("mysql", "test_user:test_password@tcp(localhost:3306)/")
+	db, err = sql.Open("mysql", "test_user:test_password@tcp(localhost:3301)/")
 	if err != nil {
 		log.Fatalf("Error connecting to database: %v", err)
 	}

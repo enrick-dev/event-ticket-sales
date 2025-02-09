@@ -12,7 +12,7 @@ BINARY_NAME = events
 DB_USER = test_user
 DB_PASSWORD = test_password
 DB_HOST = localhost
-DB_PORT = 3306
+DB_PORT = 3301
 DB_NAME = test_db
 
 all: swag build run

@@ -51,7 +51,7 @@ export default function Home() {
     <main>
       <Title>Eventos disponíveis</Title>
 
-      <div className="mt-8 sm:grid sm:grid-cols-auto-fit-cards flex flex-wrap justify-center gap-x-2 gap-y-4">
+      <div className="mt-8 sm:grid -backdrop-hue-rotate-30 sm:grid-cols-auto-fit-cards flex flex-wrap justify-center gap-x-2 gap-y-4">
         {events.map((event) => (
           <EventCard key={event.id} event={event} />
         ))}

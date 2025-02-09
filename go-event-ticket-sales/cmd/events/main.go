@@ -27,7 +27,7 @@ import (
 // @BasePath /
 func main() {
 	// Configuração do banco de dados
-	db, err := sql.Open("mysql", "test_user:test_password@tcp(localhost:3306)/test_db")
+	db, err := sql.Open("mysql", "test_user:test_password@tcp(localhost:3301)/test_db")
 	if err != nil {
 		log.Fatal(err)
 	}

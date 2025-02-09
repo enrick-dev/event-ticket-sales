@@ -10,8 +10,8 @@ import { join } from 'path';
   imports: [
     ConfigModule.forRoot({
       envFilePath: [
-        join(__dirname, '..', `.env.partner1${process.env.NODE_ENV}`),
-        join(__dirname, '..', '.env.partner1'),
+        join(__dirname, '../../../', `.env.partner1${process.env.NODE_ENV}`),
+        join(__dirname, '../../../', '.env.partner1'),
       ],
       isGlobal: true,
     }),
