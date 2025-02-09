@@ -41,8 +41,8 @@ func main() {
 
 	// URLs base específicas para cada parceiro
 	partnerBaseURLs := map[int]string{
-		1: "http://localhost:9000/api1",
-		2: "http://localhost:9000/api2",
+		1: "localhost:3000",
+		2: "localhost:3001",
 	}
 
 	listEventsUseCase := usecase.NewListEventsUseCase(eventRepo)

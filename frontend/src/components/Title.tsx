@@ -1,15 +1,13 @@
-import { PropsWithChildren } from "react"
+import { PropsWithChildren } from "react";
 
 export type TitleProps = {
-  classname?: string
-}
+  className?: string;
+};
 
-const Title = (props: PropsWithChildren<TitleProps>) => {
+export function Title(props: PropsWithChildren<TitleProps>) {
   return (
-    <div>
-      <h1 className={`text-left text-[24px] font-semibold ${props.classname}`}>{props.children}</h1>
-    </div>
-  )
+    <h1 className={`text-left text-[24px] font-semibold ${props.className}`}>
+      {props.children}
+    </h1>
+  );
 }
-
-export default Title
